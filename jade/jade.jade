@@ -1,0 +1,29 @@
+doctype html 
+html
+  head
+    meta(charset="utf-8")
+    title learning jade
+  body
+    h1 #{h1}
+    p  This case is written by  #{name}.
+    div
+      table(border=1)
+        tr
+          td  编号
+          td  省
+          td  省会
+          td  分数
+        for  p,index  in  provincials
+          tr
+            td=  index
+            td  #{p}
+            td=  center[index]
+            td=  cscores[index]
+
+
+
+
+       
+    
+        
+        
